@@ -1,0 +1,181 @@
+.popUp {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  background-color: blueviolet;
+  padding: 2rem;
+  padding-top: 0rem;
+  width: 20rem;
+  color: white;
+  font-family: "Nanum Pen Script", cursive;
+  box-shadow: 10px 10px 20px black;
+  text-shadow: 2px 2px 1px black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  background-image: url("https://previews.123rf.com/images/eugenesergeev/eugenesergeev1211/eugenesergeev121100019/16098285-empty-bulletin-board-background-texture-natural-cork-board.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.popTitle {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 3px 3px 1px black;
+  padding: 0rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+.label {
+  font-size: 2rem;
+}
+
+.closeBtn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  padding-top: 2rem;
+  margin: 0rem;
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.close {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+  cursor: pointer;
+}
+
+.close:hover {
+  transform: scale(1.1);
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgb(84, 25, 139);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 3rem;
+}
+
+.submitBtn:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 2px black;
+}
+
+#typeOfTask {
+  border: none;
+  font-size: 1rem;
+  padding: 7px;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  background-color: rgb(175, 113, 233);
+}
+
+#descInput {
+  border: none;
+  font-size: 1rem;
+  padding: 7px;
+  outline: none;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  background-color: rgb(175, 113, 233);
+}
+
+::placeholder {
+  color: white;
+}
+
+#priority {
+  border: none;
+  font-size: 1rem;
+  padding: 7px;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  background-color: rgb(175, 113, 233);
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.startMsg {
+  color: rgb(248, 52, 52);
+  font-size: 5rem;
+  font-family: "Nerko One", cursive;
+  text-shadow: 6px 6px 2px black;
+}
+
+.openForm {
+  width: 15rem;
+  padding: 1rem;
+  font-family: "Nerko One", cursive;
+  background-color: rgb(28, 156, 28);
+  text-shadow: 2px 2px 2px black;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px black;
+  font-size: 2rem;
+}
+
+.openForm:hover {
+  background-color: rgb(26, 143, 26);
+  transform: scale(1.04);
+}
+
+.tasksDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.task {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(243, 239, 18);
+  padding: 2rem;
+  padding-top: 0rem;
+  min-width: 20rem;
+  color: black;
+  font-family: "Nanum Pen Script", cursive;
+  box-shadow: 10px 10px 20px black;
+  text-shadow: 1px 1px 1px white;
+  font-size: 2rem;
+  margin: 2rem;
+  transform: rotate(-4deg);
+}
+
+.task:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}

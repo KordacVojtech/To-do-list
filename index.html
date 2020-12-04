@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <title>To do list</title>
+</head>
+<body>
+
+    <div class="container" id="container">
+        <div class="start" id="start">
+        <h1 class="startMsg">Add a new task!</h1>
+        <button class="openForm" id="openForm">Open form</button>
+        </div>
+        <div class="popUp" id="popUp">
+
+            <div class="closeBtn">
+                <button class="close" id="closePop">x</button>
+            </div>
+            <h3 class="popTitle">Add a new task!</h3>
+            <label for="typeOfTask" class="label">Type of task:</label>
+            <select name="typeOfTask" id="typeOfTask">
+                <optgroup label="Studies">
+                    <option value="Homework">Homework</option>
+                    <option value="Study">Study</option>
+                </optgroup>
+                <optgroup label="Shopping">
+                    <option value="Grocery">Grocery</option>
+                    <option value="Gift">Gift</option>
+                </optgroup>
+                <optgroup label="Important dates">
+                    <option value="Birthday">Birthday</option>
+                    <option value="Work">Work</option>
+                </optgroup>
+                <optgroup label="Other">
+                    <option value="Other">Other</option>
+                </optgroup>
+            </select>
+            <label for="descInput" class="label">Description:</label>
+            <input id="descInput" placeholder="Describe the task" required>
+            <label for="priority" class="label">Task priority:</label>
+            <select name="priority" id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button id="submitBtn" class="submitBtn">Submit</button>
+        </div>
+    </div>
+    <div class="tasksDiv" id="tasksDiv">
+        <div class="task" id="task">
+            <h1 class="taskText" id="taskTitle"><u>Buy eggs</u></h1>
+            <h2 class="taskText" id="taskDesc">Buy a dozen eggs</h2>
+            <h2 class="taskText" id="taskPriority">Low</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
